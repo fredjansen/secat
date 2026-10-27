@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Features | Catalog of grey literature sources in software engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo logo-left" href="https://www.ufba.br/" title="Universidade Federal da Bahia">
+        <img src="assets/img/ufba.png" alt="UFBA">
+        <span class="logo-fallback">UFBA</span>
+      </a>
+      <div class="header-center">
+        <a class="logo" href="https://computacao.ufba.br/" title="Instituto de Computação - UFBA">
+          <img src="assets/img/ic.png" alt="Instituto de Computação">
+          <span class="logo-fallback">IC</span>
+        </a>
+        <p class="site-title"><a href="introduction.html">Catalog of grey literature sources in software engineering</a></p>
+      </div>
+      <a class="logo logo-right" href="https://pgcomp.ufba.br/" title="PGComp - UFBA">
+        <img src="assets/img/pgcomp.png" alt="PGComp">
+        <span class="logo-fallback">PGComp</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main menu">
+      <button class="menu-toggle" type="button" aria-expanded="false">&#9776; Menu</button>
+      <ul class="menu">
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="sourcelist.html">Source List</a></li>
+          <li><a href="feature.html" aria-current="page">Features</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <h1>Features</h1>
+
+      <p class="lead">Classification of the features used to characterize the grey literature sites selected for this research.</p>
+      <div class="stats"><div class="stat"><span class="stat-value">5</span><span class="stat-label">Categories</span></div><div class="stat"><span class="stat-value">33</span><span class="stat-label">Features</span></div><div class="stat"><span class="stat-value">20</span><span class="stat-label">Allow multiple values</span></div><div class="stat"><span class="stat-value">13</span><span class="stat-label">List features</span></div><div class="stat"><span class="stat-value">7</span><span class="stat-label">Text features</span></div><div class="stat"><span class="stat-value">6</span><span class="stat-label">Numeric features</span></div><div class="stat"><span class="stat-value">7</span><span class="stat-label">Yes/no features</span></div></div>
+      <ul class="toc"><li><a href="#category-1">Basic Features (8)</a></li><li><a href="#category-2">Connection and Data Features (4)</a></li><li><a href="#category-3">Statistical Features (7)</a></li><li><a href="#category-4">On Board Features (7)</a></li><li><a href="#category-5">Discussions Features (7)</a></li></ul>
+
+      <h2 id="category-1">1. Basic Features</h2>
+      <p>All basic features that characterize sites selected to this research.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Feature</th><th>Type</th><th>Expected values</th><th>Multiple</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">1</td>
+              <td class="feature-name"><strong>Associated Site</strong><span>This feature indicates which platform this site belongs to</span></td>
+              <td><span class="tag">string</span></td>
+              <td class="values"><div class="chips"><span class="chip">reddit</span><span class="chip">stack exchange</span><span class="chip">quora</span><span class="chip">microsoft</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">2</td>
+              <td class="feature-name"><strong>Creation date</strong><span>This feature indicates what year the site was created</span></td>
+              <td><span class="tag">number</span></td>
+              <td class="values">Year (YYYY format)<div class="note">Validation: Number that represents the creation year</div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">3</td>
+              <td class="feature-name"><strong>Website organization</strong><span>This feature indicates the way the site is organized</span></td>
+              <td><span class="tag">string</span></td>
+              <td class="values"><div class="chips"><span class="chip">in topics</span><span class="chip">in areas</span><span class="chip">in communities</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">4</td>
+              <td class="feature-name"><strong>Registration methods</strong><span>This feature indicates how users log in to navigate in the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">own registration</span><span class="chip">facebook account</span><span class="chip">apple ID</span><span class="chip">gmail account</span><span class="chip">linkedin</span><span class="chip">github account</span><span class="chip">outlook account</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">5</td>
+              <td class="feature-name"><strong>Search engines</strong><span>This feature indicates ways of search engines inside the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">string search</span><span class="chip">tags/labels search</span><span class="chip">similarity search</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">6</td>
+              <td class="feature-name"><strong>Type of Audience</strong><span>This feature indicates the target technical profile of the website</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">developers</span><span class="chip">software engineers</span><span class="chip">software architects</span><span class="chip">testers</span><span class="chip">IT professionals</span></div><div class="note">Default: IT professionals</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">7</td>
+              <td class="feature-name"><strong>Website type</strong><span>This feature indicates the type of website</span></td>
+              <td><span class="tag">string</span></td>
+              <td class="values"><div class="chips"><span class="chip">site</span><span class="chip">forum</span><span class="chip">community</span><span class="chip">blog</span><span class="chip">website</span></div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">8</td>
+              <td class="feature-name"><strong>Subarea of software engineering</strong><span>This feature indicates which sub-area of software engineering the site is most focused on</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">general</span><span class="chip">coding</span><span class="chip">architecture</span><span class="chip">maintenance</span><span class="chip">testing</span><span class="chip">management</span><span class="chip">evolution</span></div></td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="category-2">2. Connection and Data Features</h2>
+      <p>All connection and data features that characterize sites selected to this research.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Feature</th><th>Type</th><th>Expected values</th><th>Multiple</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">9</td>
+              <td class="feature-name"><strong>Has its own API</strong><span>This feature indicates whether the site has its own API or not</span></td>
+              <td><span class="tag">boolean</span></td>
+              <td class="values"><div class="chips"><span class="chip">yes</span><span class="chip">no</span></div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">10</td>
+              <td class="feature-name"><strong>Can download repository</strong><span>This feature indicates whether the site can download or not repository</span></td>
+              <td><span class="tag">boolean</span></td>
+              <td class="values"><div class="chips"><span class="chip">can</span><span class="chip">cannot</span></div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">11</td>
+              <td class="feature-name"><strong>Has its own Dashboard</strong><span>This feature indicates whether the site has its own dashboard or not</span></td>
+              <td><span class="tag">boolean</span></td>
+              <td class="values"><div class="chips"><span class="chip">yes</span><span class="chip">no</span></div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">12</td>
+              <td class="feature-name"><strong>Has its app</strong><span>This feature indicates whether the site has its own app or not</span></td>
+              <td><span class="tag">boolean</span></td>
+              <td class="values"><div class="chips"><span class="chip">yes</span><span class="chip">no</span></div></td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="category-3">3. Statistical Features</h2>
+      <p>All statistical features that characterize sites selected to this research.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Feature</th><th>Type</th><th>Expected values</th><th>Multiple</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">13</td>
+              <td class="feature-name"><strong>Daily audience</strong><span>This feature indicates the daily average of people that access the site</span></td>
+              <td><span class="tag">number</span></td>
+              <td class="values">Number</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">14</td>
+              <td class="feature-name"><strong>Total users registered</strong><span>This feature indicates total users registered in the site</span></td>
+              <td><span class="tag">number</span></td>
+              <td class="values">Number</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">15</td>
+              <td class="feature-name"><strong>Question rated</strong><span>This feature indicates how the questions are rated</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">Upvoted by users</span><span class="chip">Upvoted by community</span><span class="chip">Liked by users</span><span class="chip">Liked (reactions)</span><span class="chip">Editorial selection</span><span class="chip">Reactions</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">16</td>
+              <td class="feature-name"><strong>Answer rated</strong><span>This feature indicates how the answers are rated</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">Upvoted by users</span><span class="chip">Upvoted by community</span><span class="chip">Liked by users</span><span class="chip">Liked (reactions)</span><span class="chip">Editorial selection</span><span class="chip">Reactions</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">17</td>
+              <td class="feature-name"><strong>Percentual answered</strong><span>This feature indicates the percentage of questions answered on the site</span></td>
+              <td><span class="tag">number</span></td>
+              <td class="values">Number between 0 and 100<div class="note">Validation: Number between 0 and 100</div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">18</td>
+              <td class="feature-name"><strong>Average number of interactions per question</strong><span>This feature indicates the average number of interactions in each question on the site</span></td>
+              <td><span class="tag">number</span></td>
+              <td class="values">Number</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">19</td>
+              <td class="feature-name"><strong>Total of citations</strong><span>This feature indicates the total of citations of the site in journals, papers and other scientific documents</span></td>
+              <td><span class="tag">number</span></td>
+              <td class="values">Number</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="category-4">4. On Board Features</h2>
+      <p>All on Board features that characterize sites selected to this research.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Feature</th><th>Type</th><th>Expected values</th><th>Multiple</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">20</td>
+              <td class="feature-name"><strong>Moderation type</strong><span>This feature indicates the way of moderation of the questions on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">Moderation</span><span class="chip">Moderation + Authorization</span><span class="chip">Moderation + Community voting</span><span class="chip">Moderation + Editorial</span><span class="chip">Moderation + Paid access</span><span class="chip">Moderation + Community</span><span class="chip">Moderation + GitHub staff</span><span class="chip">Moderation + Google oversight</span><span class="chip">Moderation + Microsoft</span><span class="chip">Community + Moderation</span><span class="chip">Community voting + Moderation</span><span class="chip">Repo maintainers + Moderation</span><span class="chip">Invite-only + Moderation</span><span class="chip">Subreddit moderators</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">21</td>
+              <td class="feature-name"><strong>Monetization type</strong><span>This feature indicates the monetization way used on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">Ads</span><span class="chip">web site ads</span><span class="chip">website services</span><span class="chip">donations</span><span class="chip">websites subscriptions</span><span class="chip">sponsorships</span><span class="chip">sponsors contents</span><span class="chip">sponsors posts</span><span class="chip">services promotions</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">22</td>
+              <td class="feature-name"><strong>Basic required information</strong><span>This feature indicates basic information needed to post any question on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">User account</span><span class="chip">basic info</span><span class="chip">email</span><span class="chip">profile</span><span class="chip">payment</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">23</td>
+              <td class="feature-name"><strong>Needed qualification</strong><span>This feature indicates if users need to have any qualification to be able to post</span></td>
+              <td><span class="tag">string</span></td>
+              <td class="values"><div class="chips"><span class="chip">None</span><span class="chip">unknown</span></div></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td class="num">24</td>
+              <td class="feature-name"><strong>Users Ranking</strong><span>This feature indicates how users are ranked by their participation</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">badges</span><span class="chip">achievements</span><span class="chip">reactions</span><span class="chip">contribution scores</span><span class="chip">engagement</span><span class="chip">contest rankings</span><span class="chip">upvotes</span><span class="chip">followers</span><span class="chip">likes</span><span class="chip">points</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">25</td>
+              <td class="feature-name"><strong>Actions allowed</strong><span>This feature indicates what actions are allowed on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">post</span><span class="chip">discuss</span><span class="chip">compete</span><span class="chip">reply</span><span class="chip">vote</span><span class="chip">comment</span><span class="chip">like</span><span class="chip">share tips</span><span class="chip">follow users</span><span class="chip">react</span><span class="chip">solve problems</span><span class="chip">flag</span><span class="chip">Q&amp;A</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">26</td>
+              <td class="feature-name"><strong>Repository metadata</strong><span>This feature indicates if the site repository has any kind of description or not</span></td>
+              <td><span class="tag">boolean</span></td>
+              <td class="values"><div class="chips"><span class="chip">yes</span><span class="chip">no</span></div></td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="category-5">5. Discussions Features</h2>
+      <p>All discussions features that characterize sites selected to this research.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Feature</th><th>Type</th><th>Expected values</th><th>Multiple</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">27</td>
+              <td class="feature-name"><strong>Most quoted kind of topics</strong><span>This feature indicates what the most kind of topics are cited on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">technical topics</span><span class="chip">behavioral topics</span><span class="chip">professional topics</span><span class="chip">miscellaneous topics</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">28</td>
+              <td class="feature-name"><strong>Experience level</strong><span>This feature indicates the level of experience of the user</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">beginners</span><span class="chip">experienced software engineers</span><span class="chip">researchers</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">29</td>
+              <td class="feature-name"><strong>Tone of discussions</strong><span>This feature indicates the tone of discussions on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">collaborative</span><span class="chip">competitive</span><span class="chip">informal</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">30</td>
+              <td class="feature-name"><strong>Quality level of answers</strong><span>This feature indicates the quality level of the answers on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">accurate</span><span class="chip">complete</span><span class="chip">incomplete</span><span class="chip">incomprehensible</span><span class="chip">well explained</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">31</td>
+              <td class="feature-name"><strong>Non-technical user profile</strong><span>This feature indicates non-technical user profile</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">different country languages</span><span class="chip">different cultures</span><span class="chip">different knowledge</span><span class="chip">None</span></div><div class="note">Default: None</div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">32</td>
+              <td class="feature-name"><strong>Most quoted languages</strong><span>This feature indicates the most quoted languages on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">java</span><span class="chip">python</span><span class="chip">c++</span><span class="chip">c#</span><span class="chip">.net</span><span class="chip">javascript</span><span class="chip">php</span><span class="chip">ruby</span><span class="chip">go</span><span class="chip">rust</span></div></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="num">33</td>
+              <td class="feature-name"><strong>Most quoted frameworks</strong><span>This feature indicates the most quoted frameworks on the site</span></td>
+              <td><span class="tag">array</span></td>
+              <td class="values"><div class="chips"><span class="chip">laravel</span><span class="chip">react</span><span class="chip">angular</span><span class="chip">vue</span><span class="chip">django</span><span class="chip">spring</span><span class="chip">express</span><span class="chip">flask</span></div></td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Universidade Federal da Bahia &middot; Instituto de Computação &middot; PGComp
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

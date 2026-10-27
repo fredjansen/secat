@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Disclaimer | Catalog of grey literature sources in software engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo logo-left" href="https://www.ufba.br/" title="Universidade Federal da Bahia">
+        <img src="assets/img/ufba.png" alt="UFBA">
+        <span class="logo-fallback">UFBA</span>
+      </a>
+      <div class="header-center">
+        <a class="logo" href="https://computacao.ufba.br/" title="Instituto de Computação - UFBA">
+          <img src="assets/img/ic.png" alt="Instituto de Computação">
+          <span class="logo-fallback">IC</span>
+        </a>
+        <p class="site-title"><a href="introduction.html">Catalog of grey literature sources in software engineering</a></p>
+      </div>
+      <a class="logo logo-right" href="https://pgcomp.ufba.br/" title="PGComp - UFBA">
+        <img src="assets/img/pgcomp.png" alt="PGComp">
+        <span class="logo-fallback">PGComp</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main menu">
+      <button class="menu-toggle" type="button" aria-expanded="false">&#9776; Menu</button>
+      <ul class="menu">
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="sourcelist.html">Source List</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="disclaimer.html" aria-current="page">Disclaimer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <h1>Disclaimer</h1>
+
+      <p class="lead">This catalog is a research artifact. Read the limitations and threats to validity below
+      before using its data in other studies or decisions.</p>
+
+      <h2>Limitations of the online catalog</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h4>AI-generated answers</h4>
+          <p>Every answer was produced by an AI model (Claude) from its training knowledge, without live access to the sites.
+          Answers may be inaccurate, incomplete or outdated, and have not yet been fully validated by human experts.</p>
+        </div>
+        <div class="card">
+          <h4>Snapshot in time</h4>
+          <p>Grey literature sources change constantly: features, login methods, monetization and moderation policies evolve,
+          and some sites close or become read-only. The data reflects the state known when it was generated (October 2026).</p>
+        </div>
+        <div class="card">
+          <h4>Missing quantitative data</h4>
+          <p>Most statistical facets (daily audience, registered users, percentage answered, interactions, citations) are not
+          publicly reported in a comparable way and are marked as <em>not available</em>. The few numbers shown are approximate.</p>
+        </div>
+        <div class="card">
+          <h4>Closed set of values</h4>
+          <p>Answers are restricted to the expected values defined in the facet classification. Characteristics that do not fit
+          those values are lost or approximated by the closest value.</p>
+        </div>
+        <div class="card">
+          <h4>Heterogeneous sources</h4>
+          <p>The list mixes whole platforms, sub-communities (subreddits, Stack Exchange sites) and features of platforms
+          (GitHub Issues and Discussions), so some facets describe the hosting platform rather than the specific community.</p>
+        </div>
+        <div class="card">
+          <h4>No endorsement</h4>
+          <p>Listing a source does not imply endorsement of its content. External sites are the responsibility of their owners,
+          and trademarks belong to their respective holders.</p>
+        </div>
+      </div>
+
+      <h2>Threats to validity</h2>
+      <p>Following the classification commonly adopted in empirical software engineering (Wohlin et al., 2012; Runeson &amp; Höst, 2009):</p>
+
+      <h3>Construct validity</h3>
+      <ul>
+        <li>Facets such as <em>tone of discussions</em>, <em>quality level of answers</em> and <em>experience level</em> are subjective
+        and were not operationalized with objective measurement criteria.</li>
+        <li>Some facets may not capture the concept they intend to measure; for example, <em>registration methods</em> does not
+        distinguish between methods required to read and methods required to post.</li>
+        <li>Boolean facets (API, dashboard, app) do not distinguish between features of the community and features of the company
+        that hosts it.</li>
+      </ul>
+
+      <h3>Internal validity</h3>
+      <ul>
+        <li>The AI model may produce plausible but incorrect answers (hallucinations), especially for small or less-known sites.</li>
+        <li>Answers were produced by a single automated rater, without inter-rater agreement or independent cross-checking.</li>
+        <li>The model's knowledge has a cutoff date and may not reflect recent changes in the sites.</li>
+      </ul>
+
+      <h3>External validity</h3>
+      <ul>
+        <li>The 32 sources were selected by the researchers and do not form a random or exhaustive sample of grey literature in
+        software engineering.</li>
+        <li>The sample favours English-language, Q&amp;A and community sites; blogs, videos, podcasts and company documentation are
+        under-represented, so the results may not generalize to other types of grey literature.</li>
+      </ul>
+
+      <h3>Conclusion validity</h3>
+      <ul>
+        <li>Because many quantitative facets are not available, comparisons between sources based on statistics are not reliable.</li>
+        <li>The small number of sources per platform type limits any generalization about platform types.</li>
+      </ul>
+
+      <h3>Reliability</h3>
+      <ul>
+        <li>Running the same questions again with an AI model may produce different answers. To mitigate this, all inputs
+        (site list, facets and questions) and outputs are published in JSON and can be exported from the
+        <a href="export.html">Export</a> page.</li>
+        <li>Each source has a confidence level and a list of references that allows independent verification.</li>
+      </ul>
+
+      <h2>How to report a problem</h2>
+      <p>If you find incorrect or outdated information, please let us know through the <a href="feedback.html">Feedback</a> page.</p>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Universidade Federal da Bahia &middot; Instituto de Computação &middot; PGComp
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

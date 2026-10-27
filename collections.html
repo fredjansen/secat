@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collections | Catalog of grey literature sources in software engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo logo-left" href="https://www.ufba.br/" title="Universidade Federal da Bahia">
+        <img src="assets/img/ufba.png" alt="UFBA">
+        <span class="logo-fallback">UFBA</span>
+      </a>
+      <div class="header-center">
+        <a class="logo" href="https://computacao.ufba.br/" title="Instituto de Computação - UFBA">
+          <img src="assets/img/ic.png" alt="Instituto de Computação">
+          <span class="logo-fallback">IC</span>
+        </a>
+        <p class="site-title"><a href="introduction.html">Catalog of grey literature sources in software engineering</a></p>
+      </div>
+      <a class="logo logo-right" href="https://pgcomp.ufba.br/" title="PGComp - UFBA">
+        <img src="assets/img/pgcomp.png" alt="PGComp">
+        <span class="logo-fallback">PGComp</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main menu">
+      <button class="menu-toggle" type="button" aria-expanded="false">&#9776; Menu</button>
+      <ul class="menu">
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="sourcelist.html">Source List</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="collections.html" aria-current="page">Collections</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <h1>Collections</h1>
+
+      <p class="lead">All sources organized by topic. Each table shows every facet of the topic.
+      Combine the filters below to narrow down the sources; filters apply to all tables.</p>
+
+      <section class="filters" aria-label="Filters">
+        <div class="filter-row">
+          <label class="field">
+            <span>Search source</span>
+            <input id="f-search" class="search" type="search" placeholder="Name or address...">
+          </label>
+          <label class="field">
+            <span>Topic</span>
+            <select id="f-topic"><option value="all">All topics</option><option value="1">Basic Features</option><option value="2">Connection and Data Features</option><option value="3">Statistical Features</option><option value="4">On Board Features</option><option value="5">Discussions Features</option></select>
+          </label>
+        </div>
+        <div class="filter-row">
+          <label class="field">
+            <span>Facet</span>
+            <select id="f-feature"><option value="">Choose a facet...</option><optgroup label="Basic Features"><option value="1">Associated Site</option><option value="2">Creation date</option><option value="3">Website organization</option><option value="4">Registration methods</option><option value="5">Search engines</option><option value="6">Type of Audience</option><option value="7">Website type</option><option value="8">Subarea of software engineering</option></optgroup><optgroup label="Connection and Data Features"><option value="9">Has its own API</option><option value="10">Can download repository</option><option value="11">Has its own Dashboard</option><option value="12">Has its app</option></optgroup><optgroup label="Statistical Features"><option value="13">Daily audience</option><option value="14">Total users registered</option><option value="15">Question rated</option><option value="16">Answer rated</option><option value="17">Percentual answered</option><option value="18">Average number of interactions per question</option><option value="19">Total of citations</option></optgroup><optgroup label="On Board Features"><option value="20">Moderation type</option><option value="21">Monetization type</option><option value="22">Basic required information</option><option value="23">Needed qualification</option><option value="24">Users Ranking</option><option value="25">Actions allowed</option><option value="26">Repository metadata</option></optgroup><optgroup label="Discussions Features"><option value="27">Most quoted kind of topics</option><option value="28">Experience level</option><option value="29">Tone of discussions</option><option value="30">Quality level of answers</option><option value="31">Non-technical user profile</option><option value="32">Most quoted languages</option><option value="33">Most quoted frameworks</option></optgroup></select>
+          </label>
+          <label class="field">
+            <span>Value</span>
+            <select id="f-value" disabled><option value="">Choose a value...</option></select>
+          </label>
+          <button id="f-add" class="button" type="button" disabled>Add filter</button>
+        </div>
+        <div class="active-filters">
+          <div id="f-chips" class="chips"></div>
+          <button id="f-clear" class="link-button" type="button" hidden>Clear all filters</button>
+        </div>
+        <p class="note">Showing <strong id="f-count">0</strong> of <span id="f-total">0</span> sources.</p>
+      </section>
+
+      <div id="collections"></div>
+      <p id="collections-empty" class="empty-state" hidden>No source matches the selected filters.</p>
+      <noscript><p class="empty-state">Enable JavaScript to view the collections.</p></noscript>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Universidade Federal da Bahia &middot; Instituto de Computação &middot; PGComp
+  </footer>
+
+  <script src="js/catalog-data.js"></script>
+  <script src="js/collections.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+{
+  "document_title": "Grey Literature Catalog - Software Engineering Research",
+  "document_type": "Research Catalog",
+  "version": "1.0",
+  "generated_automatically": true,
+  "tool_used": "Claude Code",
+  
+  "introduction": {
+    "practitioner_researcher_chasm": {
+      "description": "The field of software engineering is characterized by a fundamental dichotomy in the creation and dissemination of knowledge.",
+      "academic_literature": {
+        "description": "Formal, rigorously peer-reviewed literature",
+        "produced_by": "Researchers",
+        "published_in": ["Journals", "Conference proceedings"],
+        "controlled_by": "Academic publishers"
+      },
+      "grey_literature": {
+        "description": "Vast and dynamic body of work",
+        "produced_by": ["Practitioners", "Software engineers", "Architects", "Technical leaders"],
+        "ecosystem": "Industry"
+      },
+      "separation_characteristics": {
+        "structural_reality": true,
+        "barriers_for_practitioners": [
+          "Academic journals behind expensive paywalls",
+          "Dense and theoretical prose",
+          "Time required to parse scientific papers"
+        ],
+        "barriers_for_researchers": [
+          "View GL as non-scientific or anecdotal",
+          "Lack of formal independent peer-review process"
+        ],
+        "result": "Chasm between state-of-the-art (academic) and state-of-the-practice (industry)"
+      },
+      "gl_proliferation_reason": {
+        "description": "Direct functional response to structural gap",
+        "practitioner_needs": [
+          "Current information",
+          "Practical information",
+          "Context-specific information",
+          "Solve immediate real-world problems"
+        ],
+        "distribution_channels": ["Blogs", "Forums", "Technical reports"],
+        "characteristics": ["Agile", "Accessible", "Aligned with practitioner needs"],
+        "purpose": "Necessary purpose-built infrastructure for knowledge exchange"
+      }
+    },
+    
+    "formal_definition": {
+      "luxembourg_definition": {
+        "established": 1997,
+        "expanded": 2004,
+        "definition": "That which is produced on all levels of government, academics, business and industry in print and electronic formats, but which is not controlled by commercial publishers",
+        "key_criterion": "Lack of control by commercial publishing entities"
+      },
+      
+      "software_engineering_context": {
+        "functional_definitions": [
+          "Any literature not subjected to formal independent peer-review process before publication",
+          "Material not indexed by major academic database vendors"
+        ],
+        "distinction": "Primary distinction between GL and white literature of academic journals and conferences",
+        "major_databases_excluded": ["ACM Digital Library", "IEEE Xplore"]
+      },
+      
+      "document_types": {
+        "reports": [
+          "Technical reports",
+          "Progress reports",
+          "Market research reports",
+          "Government reports",
+          "White papers"
+        ],
+        "academic_pre_publication": [
+          "Theses and dissertations (ETDs)",
+          "Preprints",
+          "E-prints",
+          "Working papers"
+        ],
+        "corporate_organizational": [
+          "Technical specifications and standards",
+          "Manuals",
+          "Product data",
+          "Company white papers"
+        ],
+        "conference_materials": [
+          "Conference proceedings (not formally published by major commercial entities)",
+          "Posters",
+          "Presentations",
+          "Slide decks"
+        ],
+        "online_community_generated": [
+          "Blog posts",
+          "Articles on community platforms",
+          "Discussion forum threads",
+          "Q&A site content",
+          "Newsletters",
+          "Wikis",
+          "Websites"
+        ],
+        "audiovisual_media": [
+          "Online videos",
+          "Tutorials",
+          "Recorded presentations",
+          "Podcasts"
+        ]
+      },
+      
+      "characteristics": {
+        "quality_variation": "Enormous variation in quality, rigor, and credibility",
+        "evaluation_need": "Necessitates a structured framework for evaluation"
+      }
+    },
+    
+    "catalog_information": {
+      "type": "Dynamic catalog",
+      "generation_method": "Generated automatically using Claude Code tool",
+      "total_sources": 32,
+      "applicability": "This methodology can be used in any other knowledge area that uses grey literature as a source of research"
+    }
+  },
+  
+  "catalog_organization": {
+    "facets_clustered": [
+      {
+        "id": 1,
+        "name": "Basic Features",
+        "description": "Fundamental characteristics of grey literature sources"
+      },
+      {
+        "id": 2,
+        "name": "Connection and Data Features",
+        "description": "Features related to connectivity and data access"
+      },
+      {
+        "id": 3,
+        "name": "Statistical Features",
+        "description": "Quantitative metrics and statistics"
+      },
+      {
+        "id": 4,
+        "name": "On Board Features",
+        "description": "User engagement and participation features"
+      },
+      {
+        "id": 5,
+        "name": "Discussions Features",
+        "description": "Characteristics of discussions and interactions"
+      }
+    ]
+  },
+  
+  "research_statistics": {
+    "description": "General statistics information about collections done in this research",
+    "metrics_to_evaluate": [
+      "Total sources researched",
+      "Total of categories researched",
+      "Total of features evaluated",
+      "Total academic sources evaluated"
+    ],
+    "confirmed_values": {
+      "total_sources": 32
+    }
+  },
+  
+  "metadata": {
+    "document_pages": 3,
+    "sections": [
+      "Introduction",
+      "Organization of catalog",
+      "Research Statistics"
+    ],
+    "references_cited": [1, 2, 3, 6],
+    "research_focus": "Software Engineering Grey Literature",
+    "primary_purpose": "Catalog and evaluate grey literature sources in software engineering"
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback | Catalog of grey literature sources in software engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo logo-left" href="https://www.ufba.br/" title="Universidade Federal da Bahia">
+        <img src="assets/img/ufba.png" alt="UFBA">
+        <span class="logo-fallback">UFBA</span>
+      </a>
+      <div class="header-center">
+        <a class="logo" href="https://computacao.ufba.br/" title="Instituto de Computação - UFBA">
+          <img src="assets/img/ic.png" alt="Instituto de Computação">
+          <span class="logo-fallback">IC</span>
+        </a>
+        <p class="site-title"><a href="introduction.html">Catalog of grey literature sources in software engineering</a></p>
+      </div>
+      <a class="logo logo-right" href="https://pgcomp.ufba.br/" title="PGComp - UFBA">
+        <img src="assets/img/pgcomp.png" alt="PGComp">
+        <span class="logo-fallback">PGComp</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main menu">
+      <button class="menu-toggle" type="button" aria-expanded="false">&#9776; Menu</button>
+      <ul class="menu">
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="sourcelist.html">Source List</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="export.html">Export</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <h1>Feedback</h1>
+
+      <p class="lead">Help us improve the catalog. Report incorrect answers, suggest new sources or share your opinion.</p>
+
+      <form id="feedback-form" class="feedback-form" novalidate>
+        <label class="field">
+          <span>Feedback type</span>
+          <select name="type" required>
+            <option value="Correction of a source">Correction of a source</option>
+            <option value="New source suggestion">New source suggestion</option>
+            <option value="New facet suggestion">New facet suggestion</option>
+            <option value="Website problem">Website problem</option>
+            <option value="General comment">General comment</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Related source</span>
+          <select name="source"><option value="">None / general</option><option value="ASKfm">ASKfm</option><option value="Aviyel (DEV organization)">Aviyel (DEV organization)</option><option value="Code Golf Stack Exchange">Code Golf Stack Exchange</option><option value="Codeforces">Codeforces</option><option value="CodeProject">CodeProject</option><option value="Codidact">Codidact</option><option value="DEV Community">DEV Community</option><option value="DigitalOcean Community">DigitalOcean Community</option><option value="Experts Exchange">Experts Exchange</option><option value="FindNerd">FindNerd</option><option value="Digital Point Forums">Digital Point Forums</option><option value="freeCodeCamp">freeCodeCamp</option><option value="GeeksforGeeks">GeeksforGeeks</option><option value="GitHub Discussions">GitHub Discussions</option><option value="GitHub Issues">GitHub Issues</option><option value="GitLab">GitLab</option><option value="Hacker News">Hacker News</option><option value="Hashnode">Hashnode</option><option value="Java Programming Forums">Java Programming Forums</option><option value="LeetCode">LeetCode</option><option value="Major League Hacking (MLH)">Major League Hacking (MLH)</option><option value="MDN Web Docs (pt-BR)">MDN Web Docs (pt-BR)</option><option value="Microsoft Q&amp;A">Microsoft Q&amp;A</option><option value="Quora">Quora</option><option value="r/AskProgramming">r/AskProgramming</option><option value="r/learnprogramming">r/learnprogramming</option><option value="r/programming">r/programming</option><option value="r/webdev">r/webdev</option><option value="Showwcase">Showwcase</option><option value="Software Engineering Stack Exchange">Software Engineering Stack Exchange</option><option value="Stack Overflow">Stack Overflow</option><option value="Web Applications Stack Exchange">Web Applications Stack Exchange</option></select>
+        </label>
+        <fieldset class="field rating">
+          <legend>How useful is this catalog? (optional)</legend>
+          <div class="rating-options">
+            <label><input type="radio" name="rating" value="1"> 1</label>
+            <label><input type="radio" name="rating" value="2"> 2</label>
+            <label><input type="radio" name="rating" value="3"> 3</label>
+            <label><input type="radio" name="rating" value="4"> 4</label>
+            <label><input type="radio" name="rating" value="5"> 5</label>
+          </div>
+        </fieldset>
+        <label class="field">
+          <span>Name (optional)</span>
+          <input name="name" type="text" autocomplete="name">
+        </label>
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="7" required placeholder="Describe your feedback. For corrections, include the facet and the correct value with a reference."></textarea>
+        </label>
+        <p id="feedback-error" class="form-error" role="alert" hidden>Please write a message.</p>
+        <div class="form-actions">
+          <button class="button" type="submit">Send via GitHub</button>
+          <button id="feedback-copy" class="link-button" type="button">Copy text</button>
+        </div>
+        <p class="note">Sending opens a new issue in the project repository on GitHub (a GitHub account is required) with your
+        feedback already filled in. Issues are public, so do not include personal data. Without a GitHub account, use
+        <em>Copy text</em> and send it to the research team.</p>
+        <p id="feedback-status" class="note" role="status"></p>
+      </form>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Universidade Federal da Bahia &middot; Instituto de Computação &middot; PGComp
+  </footer>
+
+  <script src="js/feedback.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

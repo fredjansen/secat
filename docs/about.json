@@ -1,0 +1,337 @@
+{
+  "document_title": "About - Catalog of grey literature sources in software engineering",
+  "version": "1.0",
+  "project": {
+    "title": "Catalog of grey literature sources in software engineering",
+    "institutions": [
+      {
+        "name": "Universidade Federal da Bahia (UFBA)",
+        "url": "https://www.ufba.br/"
+      },
+      {
+        "name": "Instituto de Computação (IC)",
+        "url": "https://computacao.ufba.br/"
+      },
+      {
+        "name": "Programa de Pós-Graduação em Ciência da Computação (PGComp)",
+        "url": "https://pgcomp.ufba.br/"
+      }
+    ],
+    "repository": "https://github.com/fredjansen/secat"
+  },
+  "methodology": [
+    "The list of grey literature sources was defined by the researchers (sitelist.json).",
+    "The facets and questions used to characterize each source were defined by the researchers (features.json).",
+    "An AI model (Claude) answered every question for every source, restricted to the expected values of each facet (sourcelist.json).",
+    "Each source received a confidence level (high, medium, low) and a list of references that can be used to verify its answers.",
+    "Numeric facets were left as 'not available' unless a publicly announced figure was known."
+  ],
+  "literature_references": [
+    {
+      "authors": "Garousi, V., Felderer, M., & Mäntylä, M. V.",
+      "year": 2019,
+      "title": "Guidelines for including grey literature and conducting multivocal literature reviews in software engineering",
+      "venue": "Information and Software Technology, 106, 101–121",
+      "doi": "10.1016/j.infsof.2018.09.006"
+    },
+    {
+      "authors": "Kamei, F., Wiese, I., Lima, C., Polato, I., Nepomuceno, V., Ferreira, W., Ribeiro, M., Pena, C., Cartaxo, B., Pinto, G., & Soares, S.",
+      "year": 2021,
+      "title": "Grey Literature in Software Engineering: A critical review",
+      "venue": "Information and Software Technology, 138, 106609",
+      "doi": "10.1016/j.infsof.2021.106609"
+    },
+    {
+      "authors": "Schöpfel, J.",
+      "year": 2011,
+      "title": "Towards a Prague definition of grey literature",
+      "venue": "The Grey Journal, 7(1), 5–18",
+      "doi": null
+    },
+    {
+      "authors": "Wohlin, C., Runeson, P., Höst, M., Ohlsson, M. C., Regnell, B., & Wesslén, A.",
+      "year": 2012,
+      "title": "Experimentation in Software Engineering",
+      "venue": "Springer",
+      "doi": "10.1007/978-3-642-29044-2"
+    },
+    {
+      "authors": "Runeson, P., & Höst, M.",
+      "year": 2009,
+      "title": "Guidelines for conducting and reporting case study research in software engineering",
+      "venue": "Empirical Software Engineering, 14(2), 131–164",
+      "doi": "10.1007/s10664-008-9102-8"
+    }
+  ],
+  "source_references": [
+    {
+      "source": "ASKfm",
+      "url": "https://ask.fm",
+      "references": [
+        "https://ask.fm/",
+        "https://en.wikipedia.org/wiki/Ask.fm"
+      ]
+    },
+    {
+      "source": "Aviyel (DEV organization)",
+      "url": "https://dev.to/aviyel",
+      "references": [
+        "https://dev.to/aviyel",
+        "https://dev.to/about",
+        "https://developers.forem.com/api"
+      ]
+    },
+    {
+      "source": "Code Golf Stack Exchange",
+      "url": "https://codegolf.stackexchange.com",
+      "references": [
+        "https://codegolf.stackexchange.com/",
+        "https://stackexchange.com/sites",
+        "https://api.stackexchange.com/"
+      ]
+    },
+    {
+      "source": "Codeforces",
+      "url": "https://codeforces.com/",
+      "references": [
+        "https://codeforces.com/",
+        "https://en.wikipedia.org/wiki/Codeforces",
+        "https://codeforces.com/apiHelp"
+      ]
+    },
+    {
+      "source": "CodeProject",
+      "url": "https://codeproject.com",
+      "references": [
+        "https://www.codeproject.com/"
+      ]
+    },
+    {
+      "source": "Codidact",
+      "url": "https://codidact.com",
+      "references": [
+        "https://codidact.com/",
+        "https://software.codidact.com/"
+      ]
+    },
+    {
+      "source": "DEV Community",
+      "url": "https://dev.to",
+      "references": [
+        "https://dev.to/",
+        "https://dev.to/about",
+        "https://developers.forem.com/api"
+      ]
+    },
+    {
+      "source": "DigitalOcean Community",
+      "url": "https://digitalocean.com/community",
+      "references": [
+        "https://www.digitalocean.com/community",
+        "https://en.wikipedia.org/wiki/DigitalOcean"
+      ]
+    },
+    {
+      "source": "Experts Exchange",
+      "url": "https://experts-exchange.com",
+      "references": [
+        "https://www.experts-exchange.com/"
+      ]
+    },
+    {
+      "source": "FindNerd",
+      "url": "https://findnerd.com",
+      "references": [
+        "https://findnerd.com/"
+      ]
+    },
+    {
+      "source": "Digital Point Forums",
+      "url": "https://forums.digitalpoint.com",
+      "references": [
+        "https://forums.digitalpoint.com/"
+      ]
+    },
+    {
+      "source": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/",
+      "references": [
+        "https://www.freecodecamp.org/",
+        "https://en.wikipedia.org/wiki/FreeCodeCamp",
+        "https://github.com/freeCodeCamp/freeCodeCamp"
+      ]
+    },
+    {
+      "source": "GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/",
+      "references": [
+        "https://www.geeksforgeeks.org/",
+        "https://en.wikipedia.org/wiki/GeeksforGeeks"
+      ]
+    },
+    {
+      "source": "GitHub Discussions",
+      "url": "https://github.com/features/discussions",
+      "references": [
+        "https://github.com/features/discussions",
+        "https://docs.github.com/en/discussions",
+        "https://en.wikipedia.org/wiki/GitHub",
+        "https://docs.github.com/en/graphql"
+      ]
+    },
+    {
+      "source": "GitHub Issues",
+      "url": "https://github.com/features/issues",
+      "references": [
+        "https://github.com/features/issues",
+        "https://docs.github.com/en/issues",
+        "https://en.wikipedia.org/wiki/GitHub",
+        "https://docs.github.com/en/rest"
+      ]
+    },
+    {
+      "source": "GitLab",
+      "url": "https://gitlab.com",
+      "references": [
+        "https://gitlab.com/",
+        "https://en.wikipedia.org/wiki/GitLab",
+        "https://docs.gitlab.com/ee/api/"
+      ]
+    },
+    {
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "references": [
+        "https://news.ycombinator.com/",
+        "https://en.wikipedia.org/wiki/Hacker_News",
+        "https://github.com/HackerNews/API"
+      ]
+    },
+    {
+      "source": "Hashnode",
+      "url": "https://hashnode.com/",
+      "references": [
+        "https://hashnode.com/",
+        "https://apidocs.hashnode.com/"
+      ]
+    },
+    {
+      "source": "Java Programming Forums",
+      "url": "https://javaprogrammingforums.com",
+      "references": [
+        "https://www.javaprogrammingforums.com/"
+      ]
+    },
+    {
+      "source": "LeetCode",
+      "url": "https://leetcode.com/",
+      "references": [
+        "https://leetcode.com/",
+        "https://en.wikipedia.org/wiki/LeetCode"
+      ]
+    },
+    {
+      "source": "Major League Hacking (MLH)",
+      "url": "https://www.mlh.com/",
+      "references": [
+        "https://mlh.io/",
+        "https://en.wikipedia.org/wiki/Major_League_Hacking"
+      ]
+    },
+    {
+      "source": "MDN Web Docs (pt-BR)",
+      "url": "https://developer.mozilla.org/pt-BR/",
+      "references": [
+        "https://developer.mozilla.org/pt-BR/",
+        "https://en.wikipedia.org/wiki/MDN_Web_Docs",
+        "https://github.com/mdn/content"
+      ]
+    },
+    {
+      "source": "Microsoft Q&A",
+      "url": "https://learn.microsoft.com/answers",
+      "references": [
+        "https://learn.microsoft.com/answers/"
+      ]
+    },
+    {
+      "source": "Quora",
+      "url": "https://quora.com",
+      "references": [
+        "https://www.quora.com/",
+        "https://en.wikipedia.org/wiki/Quora"
+      ]
+    },
+    {
+      "source": "r/AskProgramming",
+      "url": "https://reddit.com/r/AskProgramming",
+      "references": [
+        "https://www.reddit.com/r/AskProgramming/",
+        "https://en.wikipedia.org/wiki/Reddit",
+        "https://www.reddit.com/dev/api/"
+      ]
+    },
+    {
+      "source": "r/learnprogramming",
+      "url": "https://reddit.com/r/learnprogramming",
+      "references": [
+        "https://www.reddit.com/r/learnprogramming/",
+        "https://en.wikipedia.org/wiki/Reddit",
+        "https://www.reddit.com/dev/api/"
+      ]
+    },
+    {
+      "source": "r/programming",
+      "url": "https://reddit.com/r/programming",
+      "references": [
+        "https://www.reddit.com/r/programming/",
+        "https://en.wikipedia.org/wiki/Reddit",
+        "https://www.reddit.com/dev/api/"
+      ]
+    },
+    {
+      "source": "r/webdev",
+      "url": "https://reddit.com/r/webdev",
+      "references": [
+        "https://www.reddit.com/r/webdev/",
+        "https://en.wikipedia.org/wiki/Reddit",
+        "https://www.reddit.com/dev/api/"
+      ]
+    },
+    {
+      "source": "Showwcase",
+      "url": "https://www.showwcase.com/",
+      "references": [
+        "https://www.showwcase.com/"
+      ]
+    },
+    {
+      "source": "Software Engineering Stack Exchange",
+      "url": "https://softwareengineering.stackexchange.com",
+      "references": [
+        "https://softwareengineering.stackexchange.com/",
+        "https://stackexchange.com/sites",
+        "https://api.stackexchange.com/"
+      ]
+    },
+    {
+      "source": "Stack Overflow",
+      "url": "https://stackoverflow.com",
+      "references": [
+        "https://stackoverflow.com/",
+        "https://en.wikipedia.org/wiki/Stack_Overflow",
+        "https://stackexchange.com/sites",
+        "https://api.stackexchange.com/"
+      ]
+    },
+    {
+      "source": "Web Applications Stack Exchange",
+      "url": "https://webapps.stackexchange.com",
+      "references": [
+        "https://webapps.stackexchange.com/",
+        "https://stackexchange.com/sites",
+        "https://api.stackexchange.com/"
+      ]
+    }
+  ]
+}

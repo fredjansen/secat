@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Export | Catalog of grey literature sources in software engineering</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo logo-left" href="https://www.ufba.br/" title="Universidade Federal da Bahia">
+        <img src="assets/img/ufba.png" alt="UFBA">
+        <span class="logo-fallback">UFBA</span>
+      </a>
+      <div class="header-center">
+        <a class="logo" href="https://computacao.ufba.br/" title="Instituto de Computação - UFBA">
+          <img src="assets/img/ic.png" alt="Instituto de Computação">
+          <span class="logo-fallback">IC</span>
+        </a>
+        <p class="site-title"><a href="introduction.html">Catalog of grey literature sources in software engineering</a></p>
+      </div>
+      <a class="logo logo-right" href="https://pgcomp.ufba.br/" title="PGComp - UFBA">
+        <img src="assets/img/pgcomp.png" alt="PGComp">
+        <span class="logo-fallback">PGComp</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" aria-label="Main menu">
+      <button class="menu-toggle" type="button" aria-expanded="false">&#9776; Menu</button>
+      <ul class="menu">
+          <li><a href="introduction.html">Introduction</a></li>
+          <li><a href="sourcelist.html">Source List</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="export.html" aria-current="page">Export</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+      <h1>Export</h1>
+
+      <p class="lead">Export the complete catalog: every source with its answers to all facets.</p>
+      <div class="export-grid">
+        <div class="card export-card">
+          <h3>JSON</h3>
+          <p>JSON Schema (draft 2020-12) describing a source, followed by the data of all sources.</p>
+          <button class="button" type="button" data-export="json">Export JSON</button>
+        </div>
+        <div class="card export-card">
+          <h3>HTML</h3>
+          <p>A single standalone HTML file with one table per topic, ready to open offline or print.</p>
+          <button class="button" type="button" data-export="html">Export HTML</button>
+        </div>
+        <div class="card export-card">
+          <h3>Python</h3>
+          <p>A Python module with the data as native structures and helper functions to query it.</p>
+          <button class="button" type="button" data-export="python">Export Python</button>
+        </div>
+      </div>
+      <p id="export-status" class="note" role="status"></p>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    Universidade Federal da Bahia &middot; Instituto de Computação &middot; PGComp
+  </footer>
+
+  <script src="js/catalog-data.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
