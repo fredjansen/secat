@@ -1,0 +1,512 @@
+{
+  "document_title": "Grey Literature Sites - Feature Classification",
+  "version": "1.0",
+  "total_categories": 5,
+  "total_features": 33,
+  
+  "categories": [
+    {
+      "id": 1,
+      "name": "Basic Features",
+      "description": "All basic features that characterize sites selected to this research",
+      "features": [
+        {
+          "id": 1,
+          "name": "Associated Site",
+          "description": "This feature indicates which platform this site belongs to",
+          "data_type": "string",
+          "expected_values": ["reddit", "stack exchange", "quora", "microsoft", "None"],
+          "allow_multiple": false,
+          "question": "Based on the 'Associated Site' explanation, What platform is this site linked to?",
+          "default_value": "None"
+        },
+        {
+          "id": 2,
+          "name": "Creation date",
+          "description": "This feature indicates what year the site was created",
+          "data_type": "number",
+          "expected_values": "Year (YYYY format)",
+          "allow_multiple": false,
+          "question": "Based on the 'Creation date' explanation, What is the creation date?",
+          "validation": "Number that represents the creation year"
+        },
+        {
+          "id": 3,
+          "name": "Website organization",
+          "description": "This feature indicates the way the site is organized",
+          "data_type": "string",
+          "expected_values": ["in topics", "in areas", "in communities", "None"],
+          "allow_multiple": false,
+          "question": "Based on the 'Website organization' explanation, How are these sites organized?",
+          "default_value": "None"
+        },
+        {
+          "id": 4,
+          "name": "Registration methods",
+          "description": "This feature indicates how users log in to navigate in the site",
+          "data_type": "array",
+          "expected_values": [
+            "own registration",
+            "facebook account",
+            "apple ID",
+            "gmail account",
+            "linkedin",
+            "github account",
+            "outlook account"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Registration methods' explanation, What are the available registration methods?"
+        },
+        {
+          "id": 5,
+          "name": "Search engines",
+          "description": "This feature indicates ways of search engines inside the site",
+          "data_type": "array",
+          "expected_values": ["string search", "tags/labels search", "similarity search", "None"],
+          "allow_multiple": true,
+          "question": "Based on the 'Search engines' explanation, What search engines are available on this site?",
+          "default_value": "None"
+        },
+        {
+          "id": 6,
+          "name": "Type of Audience",
+          "description": "This feature indicates the target technical profile of the website",
+          "data_type": "array",
+          "expected_values": [
+            "developers",
+            "software engineers",
+            "software architects",
+            "testers",
+            "IT professionals"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Type of Audience' explanation, What type of audience does this site target?",
+          "default_value": "IT professionals"
+        },
+        {
+          "id": 7,
+          "name": "Website type",
+          "description": "This feature indicates the type of website",
+          "data_type": "string",
+          "expected_values": ["site", "forum", "community", "blog", "website"],
+          "allow_multiple": false,
+          "question": "Based on the 'Website type' explanation, Is this site a forum, a community, a blog or something else?"
+        },
+        {
+          "id": 8,
+          "name": "Subarea of software engineering",
+          "description": "This feature indicates which sub-area of software engineering the site is most focused on",
+          "data_type": "array",
+          "expected_values": [
+            "general",
+            "coding",
+            "architecture",
+            "maintenance",
+            "testing",
+            "management",
+            "evolution"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Subarea of software engineering' explanation, Which of the sub-areas within software engineering?"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Connection and Data Features",
+      "description": "All connection and data features that characterize sites selected to this research",
+      "features": [
+        {
+          "id": 9,
+          "name": "Has its own API",
+          "description": "This feature indicates whether the site has its own API or not",
+          "data_type": "boolean",
+          "expected_values": ["yes", "no"],
+          "allow_multiple": false,
+          "question": "Based on the 'Has its own API' explanation, Does this site have its own API for searching data?"
+        },
+        {
+          "id": 10,
+          "name": "Can download repository",
+          "description": "This feature indicates whether the site can download or not repository",
+          "data_type": "boolean",
+          "expected_values": ["can", "cannot"],
+          "allow_multiple": false,
+          "question": "Based on the 'Can download repository' explanation, Does this site allow you to download a repository?"
+        },
+        {
+          "id": 11,
+          "name": "Has its own Dashboard",
+          "description": "This feature indicates whether the site has its own dashboard or not",
+          "data_type": "boolean",
+          "expected_values": ["yes", "no"],
+          "allow_multiple": false,
+          "question": "Based on the 'Has its own Dashboard' explanation, Does this site have its own dashboard with general information?"
+        },
+        {
+          "id": 12,
+          "name": "Has its app",
+          "description": "This feature indicates whether the site has its own app or not",
+          "data_type": "boolean",
+          "expected_values": ["yes", "no"],
+          "allow_multiple": false,
+          "question": "Based on the 'Has its app' explanation, Does this site have its own apps?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Statistical Features",
+      "description": "All statistical features that characterize sites selected to this research",
+      "features": [
+        {
+          "id": 13,
+          "name": "Daily audience",
+          "description": "This feature indicates the daily average of people that access the site",
+          "data_type": "number",
+          "expected_values": "Number",
+          "allow_multiple": false,
+          "question": "Based on the 'Daily audience' explanation, What is the size of this site's daily audience?"
+        },
+        {
+          "id": 14,
+          "name": "Total users registered",
+          "description": "This feature indicates total users registered in the site",
+          "data_type": "number",
+          "expected_values": "Number",
+          "allow_multiple": false,
+          "question": "Based on the 'Total users registered' explanation, How many users are registered on this site?"
+        },
+        {
+          "id": 15,
+          "name": "Question rated",
+          "description": "This feature indicates how the questions are rated",
+          "data_type": "array",
+          "expected_values": [
+            "Upvoted by users",
+            "Upvoted by community",
+            "Liked by users",
+            "Liked (reactions)",
+            "Editorial selection",
+            "Reactions",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Question rated' explanation, How is the question rated on the site?",
+          "default_value": "None"
+        },
+        {
+          "id": 16,
+          "name": "Answer rated",
+          "description": "This feature indicates how the answers are rated",
+          "data_type": "array",
+          "expected_values": [
+            "Upvoted by users",
+            "Upvoted by community",
+            "Liked by users",
+            "Liked (reactions)",
+            "Editorial selection",
+            "Reactions",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Answer rated' explanation, How is the answer rated on the site?",
+          "default_value": "None"
+        },
+        {
+          "id": 17,
+          "name": "Percentual answered",
+          "description": "This feature indicates the percentage of questions answered on the site",
+          "data_type": "number",
+          "expected_values": "Number between 0 and 100",
+          "allow_multiple": false,
+          "question": "Based on the 'Percentual answered' explanation, What percentage of the questions on this site are answered?",
+          "validation": "Number between 0 and 100"
+        },
+        {
+          "id": 18,
+          "name": "Average number of interactions per question",
+          "description": "This feature indicates the average number of interactions in each question on the site",
+          "data_type": "number",
+          "expected_values": "Number",
+          "allow_multiple": false,
+          "question": "Based on the 'Average number of interactions per question' explanation, How many interactions per question on this site?"
+        },
+        {
+          "id": 19,
+          "name": "Total of citations",
+          "description": "This feature indicates the total of citations of the site in journals, papers and other scientific documents",
+          "data_type": "number",
+          "expected_values": "Number",
+          "allow_multiple": false,
+          "question": "Based on the 'Total of citations' explanation, How many external citations such as journals, articles does this website have?"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "On Board Features",
+      "description": "All on Board features that characterize sites selected to this research",
+      "features": [
+        {
+          "id": 20,
+          "name": "Moderation type",
+          "description": "This feature indicates the way of moderation of the questions on the site",
+          "data_type": "array",
+          "expected_values": [
+            "Moderation",
+            "Moderation + Authorization",
+            "Moderation + Community voting",
+            "Moderation + Editorial",
+            "Moderation + Paid access",
+            "Moderation + Community",
+            "Moderation + GitHub staff",
+            "Moderation + Google oversight",
+            "Moderation + Microsoft",
+            "Community + Moderation",
+            "Community voting + Moderation",
+            "Repo maintainers + Moderation",
+            "Invite-only + Moderation",
+            "Subreddit moderators",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Moderation type' explanation, How is this site moderated?",
+          "default_value": "None"
+        },
+        {
+          "id": 21,
+          "name": "Monetization type",
+          "description": "This feature indicates the monetization way used on the site",
+          "data_type": "array",
+          "expected_values": [
+            "Ads",
+            "web site ads",
+            "website services",
+            "donations",
+            "websites subscriptions",
+            "sponsorships",
+            "sponsors contents",
+            "sponsors posts",
+            "services promotions",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Monetization type' explanation, Does this site have any type of monetization?",
+          "default_value": "None"
+        },
+        {
+          "id": 22,
+          "name": "Basic required information",
+          "description": "This feature indicates basic information needed to post any question on the site",
+          "data_type": "array",
+          "expected_values": [
+            "User account",
+            "basic info",
+            "email",
+            "profile",
+            "payment",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Basic required information' explanation, What basic data is required to register a post on the website?",
+          "default_value": "None"
+        },
+        {
+          "id": 23,
+          "name": "Needed qualification",
+          "description": "This feature indicates if users need to have any qualification to be able to post",
+          "data_type": "string",
+          "expected_values": ["None", "unknown"],
+          "allow_multiple": false,
+          "question": "Based on the 'Needed qualification' explanation, Is there any user qualification for participation on the site?"
+        },
+        {
+          "id": 24,
+          "name": "Users Ranking",
+          "description": "This feature indicates how users are ranked by their participation",
+          "data_type": "array",
+          "expected_values": [
+            "badges",
+            "achievements",
+            "reactions",
+            "contribution scores",
+            "engagement",
+            "contest rankings",
+            "upvotes",
+            "followers",
+            "likes",
+            "points",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Users Ranking' explanation, How users are ranked on the site based on their participation in it?",
+          "default_value": "None"
+        },
+        {
+          "id": 25,
+          "name": "Actions allowed",
+          "description": "This feature indicates what actions are allowed on the site",
+          "data_type": "array",
+          "expected_values": [
+            "post",
+            "discuss",
+            "compete",
+            "reply",
+            "vote",
+            "comment",
+            "like",
+            "share tips",
+            "follow users",
+            "react",
+            "solve problems",
+            "flag",
+            "Q&A"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Actions allowed' explanation, What actions are allowed on the website?"
+        },
+        {
+          "id": 26,
+          "name": "Repository metadata",
+          "description": "This feature indicates if the site repository has any kind of description or not",
+          "data_type": "boolean",
+          "expected_values": ["yes", "no"],
+          "allow_multiple": false,
+          "question": "Based on the 'Repository metadata' explanation, Does this site provide any kind of description of the repository and the site itself for consultation?"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Discussions Features",
+      "description": "All discussions features that characterize sites selected to this research",
+      "features": [
+        {
+          "id": 27,
+          "name": "Most quoted kind of topics",
+          "description": "This feature indicates what the most kind of topics are cited on the site",
+          "data_type": "array",
+          "expected_values": [
+            "technical topics",
+            "behavioral topics",
+            "professional topics",
+            "miscellaneous topics"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Most quoted kind of topics' explanation, What are the most quoted topics on the site?"
+        },
+        {
+          "id": 28,
+          "name": "Experience level",
+          "description": "This feature indicates the level of experience of the user",
+          "data_type": "array",
+          "expected_values": [
+            "beginners",
+            "experienced software engineers",
+            "researchers"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Experience level' explanation, What is the experience level of the site's users?"
+        },
+        {
+          "id": 29,
+          "name": "Tone of discussions",
+          "description": "This feature indicates the tone of discussions on the site",
+          "data_type": "array",
+          "expected_values": [
+            "collaborative",
+            "competitive",
+            "informal"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Tone of discussions' explanation, What is the tone of discussions on the site?"
+        },
+        {
+          "id": 30,
+          "name": "Quality level of answers",
+          "description": "This feature indicates the quality level of the answers on the site",
+          "data_type": "array",
+          "expected_values": [
+            "accurate",
+            "complete",
+            "incomplete",
+            "incomprehensible",
+            "well explained"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Quality level of answers' explanation, What is the quality level of the answers?"
+        },
+        {
+          "id": 31,
+          "name": "Non-technical user profile",
+          "description": "This feature indicates non-technical user profile",
+          "data_type": "array",
+          "expected_values": [
+            "different country languages",
+            "different cultures",
+            "different knowledge",
+            "None"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Non-technical user profile' explanation, What is the profile of the users of this site?",
+          "default_value": "None"
+        },
+        {
+          "id": 32,
+          "name": "Most quoted languages",
+          "description": "This feature indicates the most quoted languages on the site",
+          "data_type": "array",
+          "expected_values": [
+            "java",
+            "python",
+            "c++",
+            "c#",
+            ".net",
+            "javascript",
+            "php",
+            "ruby",
+            "go",
+            "rust"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Most quoted languages' explanation, What are the most quoted languages on the site?"
+        },
+        {
+          "id": 33,
+          "name": "Most quoted frameworks",
+          "description": "This feature indicates the most quoted frameworks on the site",
+          "data_type": "array",
+          "expected_values": [
+            "laravel",
+            "react",
+            "angular",
+            "vue",
+            "django",
+            "spring",
+            "express",
+            "flask"
+          ],
+          "allow_multiple": true,
+          "question": "Based on the 'Most quoted frameworks' explanation, What are the most quoted frameworks on the site?"
+        }
+      ]
+    }
+  ],
+  
+  "summary": {
+    "total_features": 33,
+    "features_by_category": {
+      "Basic Features": 8,
+      "Connection and Data Features": 4,
+      "Statistical Features": 7,
+      "On Board Features": 7,
+      "Discussions Features": 7
+    },
+    "features_allowing_multiple_values": 20,
+    "boolean_features": 7,
+    "numeric_features": 6,
+    "string_features": 7,
+    "array_features": 13
+  }
+}

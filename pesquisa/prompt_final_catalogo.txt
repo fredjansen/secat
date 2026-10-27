@@ -1,0 +1,59 @@
+Primeira etapa
+--------------
+
+criar um site em html, css e javascript sem usar framework externo que tenha a seguinte estrutura:
+
+- topo : contendo o título do site "Catalog of grey literature sources in software engineering"
+- topo : colocar do lado esquerdo do topo a marca da UFBA, no centro a marca do Instituto de Computação e no lado direito do topo
+  a marca do PGComp da UFBA
+- lateral esquerda: contendo um menu com os seguintes itens:
+
+      Introduction : criar um arquivo de introduction.html e preencher o que está no arquivo introduction.json nesse arquivo e associar ao item do menu Introduction
+      Source List : criar um arquivo de sourcelist.html e preencher o que está no arquivo sitelist.json, criando um hyperlink para cada site da lista
+      Features : criar um arquivo de feature.html e preencher o que está no arquivo features.json
+      Collections
+      Disclaimer 
+	  Feedback
+      About       
+      Export 
+
+ - corpo: que irá conter os dados relacionados ao item do menu associado
+ - os arquivos .json estão na pasta docs
+ 
+**********************************************************************************************************************
+ 
+ Segunda Etapa
+ -------------
+ 
+ A partir do site criado anteriormente, fazer as seguintes ações:
+
+  - Para cada site da lista no json sitelist.json responder as perguntas contidas no arquivo json features.json, usando IA, e 
+    gerar um outro json com o nome sourcelist.json com todos os sites e as respostas às perguntas contidas no arquivo features.json
+	
+  - Associar as respostas contidas no arquivo sourcelist.json e associar a cada hyperlink do site do arquivo sourcelist.html todas as respostas 
+    atribuidas a cada site. Colocar as respostas no arquivo .html correspondente ao site.
+	
+  - A partir das referências usadas no item acima criar um json de nome about.json e copiar esses dados em um arquivo about.html
+    e associar esse arquivo html ao item do menu chamado About
+	
+  - A partir do arquivo sourcelist.json gerado em ação anterior criar tabelas por tópicos com todas as facetas daquele tópico em uma tabela. 
+    Os tópicos e as facetas estão contidos no arquivo features.json. Essas informações em tabelas serão colocadas em um arquivo collections.html
+	e deverá ser associado ao item do menu Collections. Todos os sites listados em todas as tabelas criar um hyperlink para acessar diretamente
+	a página do site.
+
+  - Criar filtros na página collections.html que permita ser feito pelos usuários do site
+
+  - Criar um arquivo disclaimer.html e incluir de maneira organizada todas as limitações à criação desse catálogo online, apresentar todas as 
+    ameaças à validadde do estudo e associar esse arquivo
+    ao item do menu Disclaimer.
+  
+  - Ao acionar o item export do menu lateral mostrar no corpo do site 3 botões que permitam fazer export do site em schema json, em html ou em python  
+
+  -  Criar uma área de feedback no site associada ao item feedback do menu
+
+**********************************************************************************************************************
+
+**** COLOCAR NO CATÁLOGO O LOGO DA UFBA, IC E PGCOMP E DIZER QUE É UM TRABALHO DE DOUTORADO E O MEU NOME
+  
+
+ 
